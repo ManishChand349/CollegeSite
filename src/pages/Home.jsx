@@ -79,7 +79,7 @@ const Main = styled.div`
 }
 
 .top-div{
-  background-color: #4175FC;
+  background-color: #EFECFF;
 }
 .main-logo{
      width: 190px;
@@ -136,7 +136,7 @@ const Main = styled.div`
 }
 /* Search.................. */
 .Search-div{
-  background-color: #F8F9F9;
+  background-color: #EFECFF;
   margin-top: 10px;
   height: 200px;
   display: flex;
@@ -149,7 +149,7 @@ const Main = styled.div`
   /* justify-content: center; */
   }
   .inp-search{
-    padding: 12px 0;
+    padding: 11px 0;
     border: none;
     padding-right: 120px;
     padding-left: 10px;
@@ -165,14 +165,14 @@ input[type="text"]{
             font-size: 1rem;
         }
   .Search-btn{
-    padding: 14px 30px;
+    padding: 13px 30px;
     border: none;
     border-radius: 4px;
     background-color: #084AF3;
     color: #fff;
     font-weight: 700;
     cursor: pointer;
-    margin-left: 2px;
+    margin-left: 12px;
   }
   .Explore-courese-div{
     display: flex;
@@ -183,7 +183,7 @@ input[type="text"]{
   display: flex;
   gap: 10px;
   width: auto;
-  background-color: #000;
+  background-color: #EFECFF;
   padding: 20px;
   border-radius: 7px;
 }
@@ -200,5 +200,14 @@ input[type="text"]{
   font-size:0.9rem;
   border-radius: 4px;
   cursor: pointer;
+}
+.Compare-Course-div{
+ background-color: #EFECFF;
+ height: 200px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 50px;
 }
 `;

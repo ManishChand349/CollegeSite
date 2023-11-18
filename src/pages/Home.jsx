@@ -7,6 +7,7 @@ import SD1 from "../assets/home-img/SD1.png";
 import SD2 from "../assets/home-img/SD2.png";
 import SD3 from "../assets/home-img/SD3.png";
 import SD4 from "../assets/home-img/SD4.png";
+import woman from "../assets/home-img/woman.jpg";
 
 export const Home = () => {
   return (
@@ -80,12 +81,45 @@ export const Home = () => {
           </div>
         </section>
 
+        {/* Compare courses */}
         <section className="Compare-Course-div">
           <div className="compare-div">
             <h1>Compare & Select Best Course of Your Choice</h1>
             <button className="compare-btn">Compare Courses</button>
           </div>
         </section>
+
+        <section className="Experts-section">
+              <div className="grid">
+                <div className="inner-div box-1">
+                  <h1>Connect With Experts Directly</h1>
+                  <div className="inner-box">
+                  <div className="inner-box-1">
+                  <img src={woman} alt="" />
+                    <p>Diksha</p>
+                    <p>Expert</p>
+                    <p>12+ Years Experience</p>
+                    <button className="compare-btn">CONNECT</button>
+                  </div>
+                  <div className="inner-box-2">
+                  <img src={woman} alt="" />
+                  <p>Diksha</p>
+                    <p>Expert</p>
+                    <p>12+ Years Experience</p>
+                    <button className="compare-btn">CONNECT</button>
+                  </div>
+                  </div>
+                </div>
+                <div className="inner-div box-2">
+                  <div>
+                    <h1>Connect With Counselor</h1>
+                    <button className="compare-btn">CONNECT</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+
       </Main>
     </>
   );
@@ -119,7 +153,7 @@ const Main = styled.div`
 }
 .para{
   color: #1B58F4;
-  margin: 0 4rem;
+  margin-right:  4rem;
 }
 .Why-btn{
   padding: 10px 2rem;
@@ -133,8 +167,8 @@ const Main = styled.div`
 }
 .link-tag{
   text-decoration: none;
-  color: #000;
-  padding: 7px 2px;
+  color: #1f0505;
+  padding: 5px 0.4rem;
   font-weight: 700;
 }
 .link-tag:hover{
@@ -254,4 +288,43 @@ input[type="text"]{
   color: #000;
   border: #084AF3 1px solid;
 }
+.Experts-section{
+   max-width: 60%;
+   margin: 100px auto;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.inner-box{
+  display: flex;
+  gap: 40px;
+}
+.inner-div{
+  
+}
+.box-1 h1{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-right: 39px;
+  margin-bottom: 10px;
+}
+.box-2{
+  display: flex;
+  background-color: #EFECFF;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+}
+.inner-box-1, .inner-box-2{
+  background-color:  #EFECFF;
+  align-items: center;
+  padding: 20px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
 `;

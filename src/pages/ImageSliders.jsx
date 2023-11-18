@@ -36,7 +36,7 @@ const Indicator = ({ currentSlide, amountSlides, nextSlide }) => {
 };
 
 const Wrapper = styled.div`
-  height: 40dvh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -70,10 +70,10 @@ const Gradient = styled.div`
   background-color: rgba(0, 0, 0, 0);
 `;
 
-const ImageSlider = ({
+const ImageSliders = ({
   images = [],
   autoPlay = true,
-  autoPlayTime = 6000,
+  autoPlayTime = 3000,
   children,
   ...props
 }) => {
@@ -115,4 +115,4 @@ const ImageSlider = ({
   );
 };
 
-export default ImageSlider;
+export default ImageSliders;

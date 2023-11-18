@@ -3,6 +3,7 @@ import styled from "styled-components";
 import MainLogo from "../assets/home-img/MainLogo.png";
 import { Link } from "react-router-dom";
 import ImageSlider from "./ImageSlider";
+import ImageSliders from "./ImageSliders";
 import SD1 from "../assets/home-img/SD1.png";
 import SD2 from "../assets/home-img/SD2.png";
 import SD3 from "../assets/home-img/SD3.png";
@@ -128,22 +129,38 @@ export const Home = () => {
             <div className="row">
 
             <div className="help-box-1"> 
-                  <h1>GoCollege - <span>    Naam Apka Pechan Apki Disha Humari </span> </h1>
-                  <h4>How We Help You</h4>  
+                  <h1 className="help-heading" >GoCollege - <span>    Naam Apka Pechan Apki Disha Humari </span> </h1>
+                  <h4 className="second-heading">How We Help You</h4>  
             </div>
             <div className="help-box-2">
                 <div className="help-box-1">
                   <div className="help-inner-box1">
                     What you want to do
                   </div>
+                  <div className="help-inner-box1">
+                    What's your Achievement
+                  </div>
+                  <div className="help-inner-box1">
+                   Get Guidnce from us
+                  </div>
+                  <div className="help-inner-box1">
+                   Explore the World
+                  </div>
+                  <div className="help-inner-box1">
+                    Compare and Select
+                  </div>
+                  <div className="help-inner-box1">
+                  Complete the Process
+                  </div>
+                  <div className="help-inner-box1">
+                   With you, For you Always
+                  </div>
                 </div>
                 <div className="help-box-2 slider-phone">
-                <ImageSlider images={[SC1, SC2, SC3, SC4]}></ImageSlider>
+                <ImageSliders images={[SC1, SC2, SC3, SC4]}></ImageSliders>
                 </div>
             </div>
             </div>
-
-
             </section>
       </Main>
     </>
@@ -355,24 +372,42 @@ input[type="text"]{
   background-color: #EFECFF;
   max-width: 100%;
   margin: auto;
+  padding-bottom: 100px;
 }
 .help-inner-box1{
-  padding: 20px 25px;
+  padding: 30px 50px;
   background-color: #fff;
   margin-left: 20px;
   border-radius: 10px;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-weight: 500;
 
 }
 .help-box-2{
   display: flex;
+  
+}
+.second-heading{
+  margin-left: 120px;
 }
 .slider-phone{
-  height: 100%;
-width: 18%;
-margin-left: 20px;
+  height: 60dvh;
+width: 26%;
+margin-left: 320px;
+border-radius: 7px;
+margin-top: 60px;
+border: 3px solid;
 }
 .row{
-  max-width: 70%;
+  max-width: 60%;
   margin: auto;
+}
+.help-heading{
+  text-align: center;
+  font-size: 2rem;
+  margin: 15px;
+  padding: 10px 2px;
+  color: #084AF3;
 }
 `;

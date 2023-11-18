@@ -3,43 +3,51 @@ import styled from "styled-components";
 import MainLogo from "../assets/home-img/MainLogo.png";
 import { Link } from "react-router-dom";
 import ImageSlider from "./ImageSlider";
-import SD1 from "../assets/home-img/SD1.png"
-import SD2 from "../assets/home-img/SD2.png"
-import SD3 from "../assets/home-img/SD3.png"
-import SD4 from "../assets/home-img/SD4.png"
+import SD1 from "../assets/home-img/SD1.png";
+import SD2 from "../assets/home-img/SD2.png";
+import SD3 from "../assets/home-img/SD3.png";
+import SD4 from "../assets/home-img/SD4.png";
 
 export const Home = () => {
-
-
   return (
     <>
       <Main>
-      <div className="top-div">
-        Hello
-      </div>
+        <div className="top-div">Hello</div>
         <header className="main-header">
           <img className="main-logo" src={MainLogo} alt="MainLogo" />
           <p className="para">#EducationJoApkeKaamAye</p>
           <button className="Why-btn">Why GoOnlineCollege</button>
-          <Link className="link-tag" to="/me">Programs</Link>
-          <Link className="link-tag" to="/me">Top Universities</Link>
-          <Link className="link-tag" to="/me">Analyse Yourself</Link>
-          <Link className="link-tag" to="/me">Refer & Earn</Link>
+          <Link className="link-tag" to="/me">
+            Programs
+          </Link>
+          <Link className="link-tag" to="/me">
+            Top Universities
+          </Link>
+          <Link className="link-tag" to="/me">
+            Analyse Yourself
+          </Link>
+          <Link className="link-tag" to="/me">
+            Refer & Earn
+          </Link>
           <button className="Login-btn">Login</button>
         </header>
         {/* sllder */}
         <section className="containerSlider">
-        <ImageSlider images={[SD1,SD2,SD3,SD4,]}>
-         </ImageSlider>
+          <ImageSlider images={[SD1, SD2, SD3, SD4]}></ImageSlider>
         </section>
-         {/* Search */}
+        {/* Search */}
 
         <section className="Search-div">
-        <div className="input-div">
-
-            <input className="inp-search" type="text" name="" placeholder="University / Course" id="" />
+          <div className="input-div">
+            <input
+              className="inp-search"
+              type="text"
+              name=""
+              placeholder="University / Course"
+              id=""
+            />
             <button className="Search-btn">Search</button>
-        </div>
+          </div>
         </section>
 
         {/* Explore */}
@@ -48,11 +56,26 @@ export const Home = () => {
           <div className="Courese-div">
             <h1>Explore Courses</h1>
             <div className="programs-div">
-              <div className="inner-div">UG Programs</div>
-              <div className="inner-div">PG Programs</div>
-              <div className="inner-div">Ph.D/Doctorate</div>
-              <div className="inner-div">Executive Programs</div>
-              <div className="inner-div">Skill Based</div>
+              <div className="inner-div">
+                {" "}
+                <button className="program-btn"> UG Programs </button>
+              </div>
+              <div className="inner-div">
+                {" "}
+                <button className="program-btn"> PG Programs </button>
+              </div>
+              <div className="inner-div">
+                {" "}
+                <button className="program-btn"> Ph.D/Doctorate </button>
+              </div>
+              <div className="inner-div">
+                {" "}
+                <button className="program-btn"> Executive Programs</button>
+              </div>
+              <div className="inner-div">
+                {" "}
+                <button className="program-btn"> Skill Based </button>
+              </div>
             </div>
           </div>
         </section>
@@ -63,9 +86,6 @@ export const Home = () => {
             <button className="compare-btn">Compare Courses</button>
           </div>
         </section>
-
-        
-
       </Main>
     </>
   );
@@ -174,7 +194,7 @@ input[type="text"]{
     cursor: pointer;
     margin-left: 12px;
   }
-  .Explore-courese-div{
+.Explore-courese-div{
     display: flex;
     justify-content: center;
     margin-top: 100px;
@@ -192,7 +212,7 @@ input[type="text"]{
   margin-bottom: 30px;
 
 }
-.inner-div{
+.program-btn{
   background-color: #084AF3;
   padding: 10px 15px;
   color: #fff;
@@ -200,6 +220,13 @@ input[type="text"]{
   font-size:0.9rem;
   border-radius: 4px;
   cursor: pointer;
+  border: none;
+  border: #084AF3 1px solid;
+}
+.program-btn:hover{
+  background-color: #EFECFF;
+  color: #000;
+  border: #084AF3 1px solid;
 }
 .Compare-Course-div{
  background-color: #EFECFF;
@@ -209,5 +236,22 @@ input[type="text"]{
   text-align: center;
   align-items: center;
   margin-top: 50px;
+}
+.compare-btn{
+  padding: 13px 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: #084AF3;
+  border: #084AF3 1px solid;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 12px;
+    margin-top: 15px;
+}
+.compare-btn:hover{
+  background-color: #EFECFF;
+  color: #000;
+  border: #084AF3 1px solid;
 }
 `;

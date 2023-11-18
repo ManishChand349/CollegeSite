@@ -99,15 +99,15 @@ const Main = styled.div`
 }
 .para{
   color: #1B58F4;
-  margin: 0 50px;
+  margin: 0 4rem;
 }
 .Why-btn{
-  padding: 10px 20px;
+  padding: 10px 2rem;
   background-color: #084AF3;
   color: #fff;
   border: none;
   border-radius: 4px;
-  margin: 0 10px;
+  margin: 0 3rem;
   font-weight: 700;
   cursor: pointer;
 
@@ -115,7 +115,7 @@ const Main = styled.div`
 .link-tag{
   text-decoration: none;
   color: #000;
-  padding: 7px 12px;
+  padding: 7px 2px;
   font-weight: 700;
 }
 .link-tag:hover{

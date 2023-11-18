@@ -13,6 +13,11 @@ import SC2 from "../assets/home-img/SC2.png";
 import SC3 from "../assets/home-img/SC3.png";
 import SC4 from "../assets/home-img/SC4.png";
 import woman from "../assets/home-img/woman.jpg";
+import LPU from "../assets/home-img/LPU-Online-Logo.svg";
+import Manipal from "../assets/home-img/manipal.png";
+import shoolini from "../assets/home-img/shoolini.png";
+import MMU from "../assets/home-img/MMU.png";
+import CU from "../assets/home-img/CU.webp";
 
 export const Home = () => {
   return (
@@ -161,6 +166,40 @@ export const Home = () => {
                 </div>
             </div>
             </div>
+            </section>
+
+            <section className="Awarded-section">
+              <h1 className="help-heading">Recognised and Awarded Online Universities</h1>
+              <div className="awarded-inner-div">
+                <div className="awareded-inner-box-1">
+                  <img className="img-logo" src={LPU} alt="" />
+                  <p className="para-2">LPU Online</p>
+                </div>
+                <div className="awareded-inner-box-1">
+                  <img className="img-logo" src={Manipal} alt="" />
+                  <p className="para-2" >Manipal University Online</p>
+                </div>
+                <div className="awareded-inner-box-1">
+                  <img className="img-logo" src={shoolini} alt="" />
+                  <p className="para-2" >Shoolini University</p>
+                </div>
+                <div className="awareded-inner-box-1">
+                  <img className="img-logo" src={MMU} alt="" />
+                  <p className="para-2" >MMU Amba</p>
+                </div>
+                <div className="awareded-inner-box-1">
+                  <img className="img-logo" src={CU} alt="" />
+                  <p className="para-2" >Chandigarh University Online</p>
+                </div>
+              </div>
+            </section>
+
+            <section className="knowledge-hub-section">
+                    <h1 className="heading-hub">Aspirants Knowledge Hub</h1>
+                    <div className="video-div">
+                    <iframe width="529" height="300" src="https://www.youtube.com/embed/n_HUYpELI4Y" title="aesthetic intro template || aesthetic vlogs :)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="529" height="300" src="https://www.youtube.com/embed/n_HUYpELI4Y" title="aesthetic intro template || aesthetic vlogs :)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
             </section>
       </Main>
     </>
@@ -397,7 +436,7 @@ width: 26%;
 margin-left: 320px;
 border-radius: 7px;
 margin-top: 60px;
-border: 3px solid;
+border: 3px solid  #084AF3;
 }
 .row{
   max-width: 60%;
@@ -407,7 +446,46 @@ border: 3px solid;
   text-align: center;
   font-size: 2rem;
   margin: 15px;
-  padding: 10px 2px;
+  padding: 16px 2px;
   color: #084AF3;
+}
+.Awarded-section{
+  text-align: center;
+  margin-bottom: 100px;
+}
+.awarded-inner-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.awareded-inner-box-1{
+  width: 11%;
+  padding: 30px 20px;
+  border: solid #DFE0E1;
+  border-width: thin;
+  border-radius: 10px;
+  height: 150px;
+}
+.img-logo{
+  width: 100px;
+  margin-bottom: 20px;
+}
+.para-2{
+  color: #6A9C89;
+  font-size: 13px;
+  font-weight: 500;
+}
+.heading-hub{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #084AF3;
+
+}
+.video-div{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 `;

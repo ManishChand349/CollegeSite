@@ -7,6 +7,10 @@ import SD1 from "../assets/home-img/SD1.png";
 import SD2 from "../assets/home-img/SD2.png";
 import SD3 from "../assets/home-img/SD3.png";
 import SD4 from "../assets/home-img/SD4.png";
+import SC1 from "../assets/home-img/SC1.png";
+import SC2 from "../assets/home-img/SC2.png";
+import SC3 from "../assets/home-img/SC3.png";
+import SC4 from "../assets/home-img/SC4.png";
 import woman from "../assets/home-img/woman.jpg";
 
 export const Home = () => {
@@ -89,10 +93,11 @@ export const Home = () => {
           </div>
         </section>
 
+      {/* Experts  */}
         <section className="Experts-section">
               <div className="grid">
                 <div className="inner-div box-1">
-                  <h1>Connect With Experts Directly</h1>
+                  <h1 className="heading-1">Connect With Experts Directly</h1>
                   <div className="inner-box">
                   <div className="inner-box-1">
                   <img src={woman} alt="" />
@@ -103,9 +108,9 @@ export const Home = () => {
                   </div>
                   <div className="inner-box-2">
                   <img src={woman} alt="" />
-                  <p>Diksha</p>
+                  <p>Divay Mahajan</p>
                     <p>Expert</p>
-                    <p>12+ Years Experience</p>
+                    <p>14+ Years Experience</p>
                     <button className="compare-btn">CONNECT</button>
                   </div>
                   </div>
@@ -119,7 +124,27 @@ export const Home = () => {
               </div>
         </section>
 
+            <section className="help-section">
+            <div className="row">
 
+            <div className="help-box-1"> 
+                  <h1>GoCollege - <span>    Naam Apka Pechan Apki Disha Humari </span> </h1>
+                  <h4>How We Help You</h4>  
+            </div>
+            <div className="help-box-2">
+                <div className="help-box-1">
+                  <div className="help-inner-box1">
+                    What you want to do
+                  </div>
+                </div>
+                <div className="help-box-2 slider-phone">
+                <ImageSlider images={[SC1, SC2, SC3, SC4]}></ImageSlider>
+                </div>
+            </div>
+            </div>
+
+
+            </section>
       </Main>
     </>
   );
@@ -191,8 +216,8 @@ const Main = styled.div`
 /* Search.................. */
 .Search-div{
   background-color: #EFECFF;
-  margin-top: 10px;
-  height: 200px;
+  margin-top: 50px;
+  height: 20dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,7 +328,7 @@ input[type="text"]{
 .inner-div{
   
 }
-.box-1 h1{
+.heading-1{
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
@@ -326,5 +351,28 @@ input[type="text"]{
   border-radius: 4px;
   font-weight: 500;
 }
+.help-section{
+  background-color: #EFECFF;
+  max-width: 100%;
+  margin: auto;
+}
+.help-inner-box1{
+  padding: 20px 25px;
+  background-color: #fff;
+  margin-left: 20px;
+  border-radius: 10px;
 
+}
+.help-box-2{
+  display: flex;
+}
+.slider-phone{
+  height: 100%;
+width: 18%;
+margin-left: 20px;
+}
+.row{
+  max-width: 70%;
+  margin: auto;
+}
 `;

@@ -110,7 +110,6 @@ const Main = styled.div`
   margin: 0 3rem;
   font-weight: 700;
   cursor: pointer;
-
 }
 .link-tag{
   text-decoration: none;

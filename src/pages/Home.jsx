@@ -99,110 +99,112 @@ export const Home = () => {
           </div>
         </section>
 
-      {/* Experts  */}
+        {/* Experts  */}
         <section className="Experts-section">
-              <div className="grid">
-                <div className="inner-div box-1">
-                  <h1 className="heading-1">Connect With Experts Directly</h1>
-                  <div className="inner-box">
-                  <div className="inner-box-1">
+          <div className="grid">
+            <div className="inner-div box-1">
+              <h1 className="heading-1">Connect With Experts Directly</h1>
+              <div className="inner-box">
+                <div className="inner-box-1">
                   <img src={woman} alt="" />
-                    <p>Diksha</p>
-                    <p>Expert</p>
-                    <p>12+ Years Experience</p>
-                    <button className="compare-btn">CONNECT</button>
-                  </div>
-                  <div className="inner-box-2">
+                  <p>Diksha</p>
+                  <p>Expert</p>
+                  <p>12+ Years Experience</p>
+                  <button className="compare-btn">CONNECT</button>
+                </div>
+                <div className="inner-box-2">
                   <img src={woman} alt="" />
                   <p>Divay Mahajan</p>
-                    <p>Expert</p>
-                    <p>14+ Years Experience</p>
-                    <button className="compare-btn">CONNECT</button>
-                  </div>
-                  </div>
-                </div>
-                <div className="inner-div box-2">
-                  <div>
-                    <h1>Connect With Counselor</h1>
-                    <button className="compare-btn">CONNECT</button>
-                  </div>
+                  <p>Expert</p>
+                  <p>14+ Years Experience</p>
+                  <button className="compare-btn">CONNECT</button>
                 </div>
               </div>
+            </div>
+            <div className="inner-div box-2">
+              <div>
+                <h1>Connect With Counselor</h1>
+                <button className="compare-btn">CONNECT</button>
+              </div>
+            </div>
+          </div>
         </section>
 
-            <section className="help-section">
-            <div className="row">
-
-            <div className="help-box-1"> 
-                  <h1 className="help-heading" >GoCollege - <span>    Naam Apka Pechan Apki Disha Humari </span> </h1>
-                  <h4 className="second-heading">How We Help You</h4>  
+        <section className="help-section">
+          <div className="row">
+            <div className="help-box-1">
+              <h1 className="help-heading">
+                GoCollege - <span> Naam Apka Pechan Apki Disha Humari </span>{" "}
+              </h1>
+              <h4 className="second-heading">How We Help You</h4>
             </div>
             <div className="help-box-2">
-                <div className="help-box-1">
-                  <div className="help-inner-box1">
-                    What you want to do
-                  </div>
-                  <div className="help-inner-box1">
-                    What's your Achievement
-                  </div>
-                  <div className="help-inner-box1">
-                   Get Guidnce from us
-                  </div>
-                  <div className="help-inner-box1">
-                   Explore the World
-                  </div>
-                  <div className="help-inner-box1">
-                    Compare and Select
-                  </div>
-                  <div className="help-inner-box1">
-                  Complete the Process
-                  </div>
-                  <div className="help-inner-box1">
-                   With you, For you Always
-                  </div>
-                </div>
-                <div className="help-box-2 slider-phone">
-                <ImageSliders images={[SC1, SC2, SC3, SC4]}></ImageSliders>
-                </div>
-            </div>
-            </div>
-            </section>
-
-            <section className="Awarded-section">
-              <h1 className="help-heading">Recognised and Awarded Online Universities</h1>
-              <div className="awarded-inner-div">
-                <div className="awareded-inner-box-1">
-                  <img className="img-logo" src={LPU} alt="" />
-                  <p className="para-2">LPU Online</p>
-                </div>
-                <div className="awareded-inner-box-1">
-                  <img className="img-logo" src={Manipal} alt="" />
-                  <p className="para-2" >Manipal University Online</p>
-                </div>
-                <div className="awareded-inner-box-1">
-                  <img className="img-logo" src={shoolini} alt="" />
-                  <p className="para-2" >Shoolini University</p>
-                </div>
-                <div className="awareded-inner-box-1">
-                  <img className="img-logo" src={MMU} alt="" />
-                  <p className="para-2" >MMU Amba</p>
-                </div>
-                <div className="awareded-inner-box-1">
-                  <img className="img-logo" src={CU} alt="" />
-                  <p className="para-2" >Chandigarh University Online</p>
-                </div>
+              <div className="help-box-1">
+                <div className="help-inner-box1">What you want to do</div>
+                <div className="help-inner-box1">What's your Achievement</div>
+                <div className="help-inner-box1">Get Guidnce from us</div>
+                <div className="help-inner-box1">Explore the World</div>
+                <div className="help-inner-box1">Compare and Select</div>
+                <div className="help-inner-box1">Complete the Process</div>
+                <div className="help-inner-box1">With you, For you Always</div>
               </div>
-            </section>
+              <div className="help-box-2 slider-phone">
+                <ImageSliders images={[SC1, SC2, SC3, SC4]}></ImageSliders>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <section className="knowledge-hub-section">
-                    <h1 className="heading-hub">Aspirants Knowledge Hub</h1>
-                    <div className="video-div">
-                    <iframe width="529" height="300" src="https://www.youtube.com/embed/n_HUYpELI4Y" title="aesthetic intro template || aesthetic vlogs :)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <iframe width="529" height="300" src="https://www.youtube.com/embed/n_HUYpELI4Y" title="aesthetic intro template || aesthetic vlogs :)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-            </section>
-
-            
+        <section className="Awarded-section">
+          <h1 className="help-heading">
+            Recognised and Awarded Online Universities
+          </h1>
+          <div className="awarded-inner-div">
+            <div className="awareded-inner-box-1">
+              <img className="img-logo" src={LPU} alt="" />
+              <p className="para-2">LPU Online</p>
+            </div>
+            <div className="awareded-inner-box-1">
+              <img className="img-logo" src={Manipal} alt="" />
+              <p className="para-2">Manipal University Online</p>
+            </div>
+            <div className="awareded-inner-box-1">
+              <img className="img-logo" src={shoolini} alt="" />
+              <p className="para-2">Shoolini University</p>
+            </div>
+            <div className="awareded-inner-box-1">
+              <img className="img-logo" src={MMU} alt="" />
+              <p className="para-2">MMU Amba</p>
+            </div>
+            <div className="awareded-inner-box-1">
+              <img className="img-logo" src={CU} alt="" />
+              <p className="para-2">Chandigarh University Online</p>
+            </div>
+          </div>
+        </section>
+        <section className="knowledge-hub-section">
+          <h1 className="heading-hub">Aspirants Knowledge Hub</h1>
+          <div className="video-div">
+            <iframe
+              width="529"
+              height="300"
+              src="https://www.youtube.com/embed/n_HUYpELI4Y"
+              title="aesthetic intro template || aesthetic vlogs :)"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="529"
+              height="300"
+              src="https://www.youtube.com/embed/n_HUYpELI4Y"
+              title="aesthetic intro template || aesthetic vlogs :)"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
       </Main>
     </>
   );

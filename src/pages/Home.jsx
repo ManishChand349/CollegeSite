@@ -18,6 +18,7 @@ import Manipal from "../assets/home-img/manipal.png";
 import shoolini from "../assets/home-img/shoolini.png";
 import MMU from "../assets/home-img/MMU.png";
 import CU from "../assets/home-img/CU.webp";
+import AccordionMenu from "./AccordionMenu";
 
 export const Home = () => {
   return (
@@ -65,7 +66,7 @@ export const Home = () => {
 
         <section className="Explore-courese-div">
           <div className="Courese-div">
-            <h1>Explore Courses</h1>
+            <h1 className="Courses-heading">Explore Courses</h1>
             <div className="programs-div">
               <div className="inner-div">
                 {" "}
@@ -123,13 +124,13 @@ export const Home = () => {
             </div>
             <div className="inner-div box-2">
               <div>
-                <h1>Connect With Counselor</h1>
+                <h1 className="connect-heading">Connect With Counselor</h1>
                 <button className="compare-btn">CONNECT</button>
               </div>
             </div>
           </div>
         </section>
-
+        {/* help section */}
         <section className="help-section">
           <div className="row">
             <div className="help-box-1">
@@ -154,7 +155,7 @@ export const Home = () => {
             </div>
           </div>
         </section>
-
+        {/* AWarded */}
         <section className="Awarded-section">
           <h1 className="help-heading">
             Recognised and Awarded Online Universities
@@ -182,6 +183,7 @@ export const Home = () => {
             </div>
           </div>
         </section>
+        {/* knowledge */}
         <section className="knowledge-hub-section">
           <h1 className="heading-hub">Aspirants Knowledge Hub</h1>
           <div className="video-div">
@@ -202,9 +204,17 @@ export const Home = () => {
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
+              borderRadius="15"
             ></iframe>
           </div>
         </section>
+        {/* doubts */}
+        <section className="doubts-clear">
+          <div>
+          <AccordionMenu/>
+          </div>
+        </section>
+
       </Main>
     </>
   );
@@ -276,7 +286,7 @@ const Main = styled.div`
 /* Search.................. */
 .Search-div{
   background-color: #EFECFF;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   height: 20dvh;
   display: flex;
   justify-content: center;
@@ -290,7 +300,7 @@ const Main = styled.div`
   .inp-search{
     padding: 11px 0;
     border: none;
-    padding-right: 120px;
+    padding-right: 190px;
     padding-left: 10px;
     border-radius: 4px;
     text-align: left;
@@ -316,7 +326,7 @@ input[type="text"]{
 .Explore-courese-div{
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin: 100px 0;
 }
 .programs-div{
   display: flex;
@@ -329,6 +339,8 @@ input[type="text"]{
 .Courese-div h1{
   text-align: center;
   margin-bottom: 30px;
+  color: #084AF3;
+
 
 }
 .program-btn{
@@ -377,6 +389,9 @@ input[type="text"]{
    max-width: 60%;
    margin: 100px auto;
 }
+.compare-div h1{
+  color: #084AF3;
+}
 .grid{
   display: grid;
   grid-template-columns: 50% 50%;
@@ -386,7 +401,7 @@ input[type="text"]{
   gap: 40px;
 }
 .inner-div{
-  
+
 }
 .heading-1{
   font-size: 2rem;
@@ -429,10 +444,13 @@ input[type="text"]{
 }
 .help-box-2{
   display: flex;
-  
+
 }
 .second-heading{
   margin-left: 120px;
+}
+.connect-heading{
+  color: #084AF3;
 }
 .slider-phone{
   height: 60dvh;
@@ -455,7 +473,7 @@ border: 3px solid  #084AF3;
 }
 .Awarded-section{
   text-align: center;
-  margin-bottom: 100px;
+  margin: 100px;
 }
 .awarded-inner-div{
   display: flex;
@@ -480,16 +498,26 @@ border: 3px solid  #084AF3;
   font-size: 13px;
   font-weight: 500;
 }
+.knowledge-hub-section{
+  background-color: #EFECFF;
+
+}
 .heading-hub{
   text-align: center;
-  margin-bottom: 20px;
+  padding: 10px;
+  margin: 20px;
   font-size: 2rem;
   color: #084AF3;
-
 }
 .video-div{
   display: flex;
   justify-content: center;
   gap: 10px;
+  padding-bottom: 40px;
 }
+.doubts-clear{
+  max-width: 50%;
+  margin: auto;
+}
+
 `;

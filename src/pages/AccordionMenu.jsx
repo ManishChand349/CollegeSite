@@ -73,6 +73,7 @@ const Main = styled.div`
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   width: 100dvb;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 h1.title {

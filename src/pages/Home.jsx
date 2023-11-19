@@ -18,6 +18,7 @@ import Manipal from "../assets/home-img/manipal.png";
 import shoolini from "../assets/home-img/shoolini.png";
 import MMU from "../assets/home-img/MMU.png";
 import CU from "../assets/home-img/CU.webp";
+import Contract from "../assets/home-img/Contract.svg";
 import AccordionMenu from "./AccordionMenu";
 
 export const Home = () => {
@@ -217,12 +218,18 @@ export const Home = () => {
 
         <section className="Contact-section">
               <h1 className="contact-heading">Need Help? Contact Us</h1>
+              <div className="flex-div">
+
               <div className="Contact-div">
               <p className="para-3"><span className="bold">Email</span> : help@getonlinecollege.com</p>
               <p className="para-3"><span className="bold">Phone</span> : +91 8000880008</p>
               <p className="para-3"><span className="bold">Timings</span> : 8 A.M. to 9 P.M.</p>
               <p className="para-3"><span className="bold">Address</span> : New Delhi, India</p>
               <button className="compare-btn">Message Us</button>
+              </div>
+              <div>
+                <img className="Contrac-img" src={Contract} alt="" />
+              </div>
               </div>
         </section>
 
@@ -601,13 +608,13 @@ border: 3px solid  #084AF3;
   padding-bottom: 30px;
   margin-top: 5px;
 }
-.Contact-div{
-  max-width: 20%;
-  margin: auto;
-}
+ .Contact-div{
+  
+ 
+} 
 .contact-heading{
   color: #084AF3;
-  font-size: 2.3rem;
+  font-size: 2.6rem;
   text-align: center;
   padding: 20px 0;
 }
@@ -618,6 +625,15 @@ border: 3px solid  #084AF3;
 }
 .bold{
   font-weight: 600;
+}
+.Contrac-img{
+  width: 200px;
+}
+.flex-div{
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
 }
 .footer-section{
 
@@ -642,13 +658,16 @@ border: 3px solid  #084AF3;
   justify-content: center;
   gap: 10px;
   margin-top: 30px;
- 
 }
 a{
   text-decoration: none; 
 }
 .social-media a{
   color: #fff;
+  font-weight: 700;
+}
+.social-media a:hover{
+  color: #551A8B;
   font-weight: 700;
 }
 `;

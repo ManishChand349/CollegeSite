@@ -225,6 +225,73 @@ export const Home = () => {
               <button className="compare-btn">Message Us</button>
               </div>
         </section>
+
+       <footer className="footer-section">
+        <div className="footer-inner">
+          <div className="footer-box">
+            <p><span>Popular Courses</span></p>
+            <Link to="/">Finance</Link>
+            <Link to="/">Marketing</Link>
+            <Link to="/">HR</Link>
+            <Link to="/">Operations</Link>
+            <Link to="/">IT</Link>
+            <Link to="/">Data Science</Link>
+            <Link to="/">Retail</Link>
+            <Link to="/">Defence</Link>
+          </div>
+          <div className="footer-box">
+            <p><span>Top Colleges</span></p>
+            <Link to="/">IIT Delhi </Link>
+            <Link to="/">IIM Ahmedabad </Link>
+            <Link to="/">AIIMS Delhi </Link>
+            <Link to="/">Chandigarh University</Link>
+            <Link to="/">Delhi University</Link>
+            <Link to="/">IIFS</Link>
+            <Link to="/">Defence</Link>
+          </div>
+          <div className="footer-box">
+            <p><span>Resources</span></p>
+            <Link to="/">Post Enrollment Support</Link>
+            <Link to="/">Placement Support</Link>
+            <Link to="/">Checklist</Link>
+            <Link to="/">Trust</Link>
+            <Link to="/">Compare Universities</Link>
+            <Link to="/">Fake Universities</Link>
+            <Link to="/">Hire Support</Link>
+          </div>
+          <div className="footer-box">
+            <p><span>UG Courses</span></p>
+            <Link to="/">Online BCA</Link>
+            <Link to="/">Online BA</Link>
+            <Link to="/">Online B.Com</Link>
+            <Link to="/">Online BBA</Link>
+            <Link to="/">Online BA JMC</Link>
+          </div>
+          <div className="footer-box">
+            <p><span>PG Courses </span></p>
+            <Link to="/">Online MBA</Link>
+            <Link to="/">Online MCA</Link>
+            <Link to="/">Online M.Com</Link>
+            <Link to="/">Online MA</Link>
+            <Link to="/">Online M.Sc DS</Link>
+            <Link to="/">Online MA JMC</Link>
+            <Link to="/">Online M.Sc Data Science</Link>
+            <Link to="/">Online M.Sc Mathematics</Link>
+            <Link to="/">Online MA Economics</Link>
+            <Link to="/">Online MA English</Link>
+            <Link to="/">Online MA English Literature</Link>
+          </div>
+        </div>
+        <div className="social-media">
+          <Link to="/">About Us</Link>
+          <Link to="/">Blog</Link>
+          <Link to="/">Contact Us</Link>
+          <Link to="/">Careers</Link>
+          <Link to="/">Privacy Policy</Link>
+          <Link to="/">Affiliate</Link>
+          <Link to="/">Adveritse</Link>
+        </div>
+       </footer>
       </Main>
     </>
   );
@@ -531,6 +598,8 @@ border: 3px solid  #084AF3;
 }
 .Contact-section{
   background-color: #EFECFF;
+  padding-bottom: 30px;
+  margin-top: 5px;
 }
 .Contact-div{
   max-width: 20%;
@@ -549,5 +618,37 @@ border: 3px solid  #084AF3;
 }
 .bold{
   font-weight: 600;
+}
+.footer-section{
+
+  margin-top: 1px;
+  background-color: #22092C;
+  padding: 30px 0;
+  color: #fff;
+  font-weight: 700;
+}
+.footer-inner{
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-box{
+  display: flex;
+  flex-direction: column;
+}
+.social-media{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+ 
+}
+a{
+  text-decoration: none; 
+}
+.social-media a{
+  color: #fff;
+  font-weight: 700;
 }
 `;

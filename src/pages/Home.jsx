@@ -545,6 +545,7 @@ border: 3px solid  #084AF3;
 .para-3{
   font-size: 1.3rem;
   color: #6A9C89;
+  margin-bottom: 10px;
 }
 .bold{
   font-weight: 600;

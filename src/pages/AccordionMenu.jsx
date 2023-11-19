@@ -80,7 +80,7 @@ h1.title {
   justify-content: center;
   align-items: center;
   width: 800px;
-  color: #2f80ed;
+  color: #084AF3;
   font-size: 2.1rem;
   font-weight: 700;
   text-align: center;

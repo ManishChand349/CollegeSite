@@ -215,6 +215,16 @@ export const Home = () => {
           </div>
         </section>
 
+        <section className="Contact-section">
+              <h1 className="contact-heading">Need Help? Contact Us</h1>
+              <div className="Contact-div">
+              <p className="para-3"><span className="bold">Email</span> : help@getonlinecollege.com</p>
+              <p className="para-3"><span className="bold">Phone</span> : +91 8000880008</p>
+              <p className="para-3"><span className="bold">Timings</span> : 8 A.M. to 9 P.M.</p>
+              <p className="para-3"><span className="bold">Address</span> : New Delhi, India</p>
+              <button className="compare-btn">Message Us</button>
+              </div>
+        </section>
       </Main>
     </>
   );
@@ -519,5 +529,24 @@ border: 3px solid  #084AF3;
   max-width: 50%;
   margin: auto;
 }
-
+.Contact-section{
+  background-color: #EFECFF;
+}
+.Contact-div{
+  max-width: 20%;
+  margin: auto;
+}
+.contact-heading{
+  color: #084AF3;
+  font-size: 2.3rem;
+  text-align: center;
+  padding: 20px 0;
+}
+.para-3{
+  font-size: 1.3rem;
+  color: #6A9C89;
+}
+.bold{
+  font-weight: 600;
+}
 `;

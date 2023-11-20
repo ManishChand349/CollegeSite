@@ -136,7 +136,7 @@ export const Home = () => {
           <div className="row">
             <div className="help-box-1">
               <h1 className="help-heading">
-                GoCollege - <span> Naam Apka Pechan Apki Disha Humari </span>{" "}
+                GoCollege - <span className="footer-top-heaing"> Naam Apka Pechan Apki Disha Humari </span>{" "}
               </h1>
               <h4 className="second-heading">How We Help You</h4>
             </div>
@@ -236,7 +236,7 @@ export const Home = () => {
        <footer className="footer-section">
         <div className="footer-inner">
           <div className="footer-box">
-            <p><span>Popular Courses</span></p>
+            <p><span className="footer-top-heaing">Popular Courses</span></p>
             <Link to="/">Finance</Link>
             <Link to="/">Marketing</Link>
             <Link to="/">HR</Link>
@@ -247,7 +247,7 @@ export const Home = () => {
             <Link to="/">Defence</Link>
           </div>
           <div className="footer-box">
-            <p><span>Top Colleges</span></p>
+            <p><span className="footer-top-heaing">Top Colleges</span></p>
             <Link to="/">IIT Delhi </Link>
             <Link to="/">IIM Ahmedabad </Link>
             <Link to="/">AIIMS Delhi </Link>
@@ -257,7 +257,7 @@ export const Home = () => {
             <Link to="/">Defence</Link>
           </div>
           <div className="footer-box">
-            <p><span>Resources</span></p>
+            <p><span className="footer-top-heaing">Resources</span></p>
             <Link to="/">Post Enrollment Support</Link>
             <Link to="/">Placement Support</Link>
             <Link to="/">Checklist</Link>
@@ -267,7 +267,7 @@ export const Home = () => {
             <Link to="/">Hire Support</Link>
           </div>
           <div className="footer-box">
-            <p><span>UG Courses</span></p>
+            <p><span className="footer-top-heaing">UG Courses</span></p>
             <Link to="/">Online BCA</Link>
             <Link to="/">Online BA</Link>
             <Link to="/">Online B.Com</Link>
@@ -275,7 +275,7 @@ export const Home = () => {
             <Link to="/">Online BA JMC</Link>
           </div>
           <div className="footer-box">
-            <p><span>PG Courses </span></p>
+            <p><span className="footer-top-heaing">PG Courses </span></p>
             <Link to="/">Online MBA</Link>
             <Link to="/">Online MCA</Link>
             <Link to="/">Online M.Com</Link>
@@ -661,6 +661,11 @@ border: 3px solid  #084AF3;
 }
 a{
   text-decoration: none; 
+  color: #fff;
+}
+a:hover{
+  color: #551A8B;
+  font-weight: 700;
 }
 .social-media a{
   color: #fff;
@@ -669,5 +674,9 @@ a{
 .social-media a:hover{
   color: #551A8B;
   font-weight: 700;
+}
+.footer-top-heaing{
+  font-size: 1.2rem;
+  color: #084AF3;
 }
 `;

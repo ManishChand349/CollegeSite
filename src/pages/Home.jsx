@@ -638,7 +638,7 @@ border: 3px solid  #084AF3;
 .footer-section{
 
   margin-top: 1px;
-  background-color: #22092C;
+  background-color: #14151A;
   padding: 30px 0;
   color: #fff;
   font-weight: 700;
